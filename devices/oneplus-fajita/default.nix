@@ -14,7 +14,7 @@
   mobile.device.supportLevel = "best-effort";
 
   mobile.hardware = {
-    ram = 1024 * 8;
+    ram = 1024 * 10;
     screen = {
       width = 1080; height = 2340;
     };
