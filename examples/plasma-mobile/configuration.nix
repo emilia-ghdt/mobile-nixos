@@ -59,5 +59,9 @@ in
       # Not a good idea given the fact this config is insecure (well-known password).
       services.openssh.enable = true;
     }
+
+    {
+      mobile.adbd.enable = true;
+    }
   ];
 }

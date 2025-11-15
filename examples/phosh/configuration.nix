@@ -25,5 +25,9 @@ in
     services.xserver.desktopManager.phosh = {
       user = defaultUserName;
     };
+
+    mobile.adbd.enable = true;
+
+    services.openssh.enable = true;
   };
 }
