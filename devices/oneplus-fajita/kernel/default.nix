@@ -6,13 +6,13 @@
 
 mobile-nixos.kernel-builder {
   version = "6.18.2";
-  configfile = ./config_old.aarch64;
+  configfile = ./config_from_pmos.aarch64;
 
   src = fetchFromGitLab {
     owner = "sdm845-mainline";
     repo = "linux";
     rev = "sdm845-6.18.2-r0";
-    hash = "sha256-XUYv8tOk0vsG11w8UtBKizlBZ03cbQ2QRGyZEK0ECGU=";
+    hash = "sha256-soYYU4xY18igqLw/FFv2QJmcV7bgiNDc8GwjKIBVSIc=";
   };
 
   patches = [

@@ -22,5 +22,9 @@
 
   mobile.device.firmware = pkgs.callPackage ../oneplus-enchilada/firmware {};
 
+  mobile.boot.stage-1 = {
+    compression = lib.mkForce "xz";
+    kernel.package = lib.mkForce (pkgs.callPackage ./kernel { });
+  };
   mobile.system.android.device_name = "OnePlus6T";
 }
